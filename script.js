@@ -1,7 +1,9 @@
 const open = document.getElementById('open');
 const close = document.getElementById('close');
-const container = document.querySelector('.container');
+const nav = document.querySelector('.nav');
+const icon = document.getElementById('icon');
 
-open.addEventListener('click', () => container.classList.add('show-nav'))
-
-close.addEventListener('click', () => container.classList.remove('show-nav'))
+open.addEventListener('click', function () {
+    nav.classList.toggle('no-nav')
+    icon.classList.toggle('fas fa-times')
+})
